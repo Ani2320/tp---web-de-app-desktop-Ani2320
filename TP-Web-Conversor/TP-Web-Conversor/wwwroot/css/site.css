@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/bg-body.jpg);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-negro {
+    background-color: #000000;
+    color: white;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .navbar a:hover {
+        color: #757575;
+    }
+
+.navbar-toggler-icon {
+    background-image: url(../img/botonhamburguesa.png);
+}
+
+
+.seccion {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.formulario h1 {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+
+.formulario p {
+    text-align: center;
+}
+
+.formulario button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .formulario button:hover {
+        background: cadetblue;
+    }
+
+.formulario {
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+@media(min-width:768px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        border-radius: 2%;
+    }
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+    .link:hover {
+        color: cadetblue;
+    }
+
+footer p {
+    margin-top: 2px;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.blue {
+    color: slateblue;
+}
+.salir {
+    background-color: antiquewhite;
+}
+.converter_img {
+    align-content: center;
+}
+

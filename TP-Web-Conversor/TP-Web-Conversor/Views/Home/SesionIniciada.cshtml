@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "SesionIniciada";
+
+    if(ViewBag.usName != null)
+        {
+            <div class="container row">
+            <div class="col">
+            <img src = "~/images/converter.png" height="100" width="100" alt="Icono de la aplicacion"/>
+            </div>
+            <div class="col">
+            <h1><b>Bienvenido <span>@ViewBag.usName</span>
+            </b></h1>
+            </div>
+            <div class="col">
+            <p align="right">
+            <button class = "salir"><a class="link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Serrar Sesion</a></button>
+            </p>
+            </div>
+            </div>
+        }
+}
+
+<br /><br />
+
+<h2>Para el principio <a class="link text-dark blue"  href = "https://github.com/cd-educ/tp---app-desktop-Ani2320" target ="_blank">
+    <span class = "blue">Aquí</span></a> te dejo el link <a class="link text-dark blue"  href = "https://github.com/cd-educ/tp---app-desktop-Ani2320" target ="_blank">
+    <span class = "blue">https://github.com/cd-educ/tp---app-desktop-Ani2320</span></a> de GitHub de donde puedes instalar el archivo en formato .zip y descomprimirlo.
+</h2>
+
+<br />
+<h2>
+    Y el siguente paso más importante es asegurarse de tener instalado la herramienta clave para poder 
+    llevar a cabo la funcionalidad de la aplicación. La herramienta FFMPEG<br />
+    Con el siguiente link <a class="link text-dark blue"  href = "https://www.youtube.com/watch?v=f_OOhBniSu8" target ="_blank">
+    <span class = "blue">https://www.youtube.com/watch?v=f_OOhBniSu8</span></a> puedes seguir la guia de la instalación de FFMPEG.
+
+</h2>
+<br />
+<h3>Abajo con algunas fotos te presento unas funcionalidades que tiene esta aplicación</h3>
+<br />
+<div>
+    <h4>En esta seccion tienes que ingresar con el usuario que te creaste por la página</h4>
+    <br />
+    <img class = "image-container" src = "~/images/inicio.png" alt="Foto de inicio" />
+</div>
+<br />
+<div>
+    <h4>Una vez iniciaste la sesion para dar siguiente paso lo primero tienes que cargar un video en formato que te permita la aplicación.</h4>
+    <br />
+    <img class = "image-container" src = "~/images/sesionabierta.png" alt="Foto de sesion iniciada" />
+</div>
+<br />
+<div>
+    <h4>En este caso los formatos permitidos son:</h4>
+    <ul>
+            <li><h4>.mp4</h4></li>
+            <li><h4>.avi</h4></li>
+            <li><h4>.mpeg</h4></li>
+            <li><h4>.flv</h4></li>
+        </ul>
+    <br />
+    <img class = "image-container" src = "~/images/selectfile.png" alt="Foto de seleccion de archivo" />
+</div>
+<br /><br />
+<div>
+    <h4>Al seleccionar la opcion "Cambiar Formato" aparecera esta pantalla donde puedes elegir 
+        el formato en que quieras convertir el video, y el boton que presenta el formato actual(en el ejemplo MP4) se desactiva y tiene un color 
+        diferente a los otros.</h4>
+    <br />
+    <img class = "image-container" src = "~/images/detectformat.png" alt="Foto de demuestra de deteccion de formato de video" />
+</div>
+<br /><br />
+<div>
+    <h4>Una vez seleccionado la operación que quieres realizar te aparecerá esta pantalla donde tienes la opción de iniciar la operación o en caso
+        de cambio de decisión puedes volver al paso anterior
+    </h4>
+    <br />
+    <img class = "image-container" src = "~/images/iniciarproceso.png" alt="Foto de inicio de proceso" />
+</div>
+<br /><br />
+<div>
+    <h4>Al procesar la operación el mensajito en amarillo te avisa que la operación se esta procesando y significa que todavia no se finalizó</h4>
+    <br />
+    <img class = "image-container" src = "~/images/enproceso.png" alt="Foto de transaccion en proceso" />
+</div>
+<br /><br />
+<div>
+    <h4>Al terminar realizar la operación el sistema te avisará mediante el mensaje en verde, y para comprobarlo dirijite a la carpeta con la ruta 
+        que aparece en la imagen de abajo
+    </h4>
+    <br />
+    <img class = "image-container" src = "~/images/procesofin.png" alt="Foto de transaccion finalizada" />
+</div>
+<br /><br />
+<div>
+    <h4>Si hiciste todas las instalaciónes y estas seguro que ffmpeg no falla 
+        dirigite a la ruta del archivo de la aplicación y busca la carpeta Debug de la ruta tp---app-desktop-Ani2320/tp-desktop/bin/Debug
+        dentro de cual se encuentran las carpetas(por cada tipo operación se creará una única despues de realizar la primera solicitud) 
+        donde se guardarán los archivos convertidos por Conversor Mágico</h4>
+    <br />
+    <img class = "image-container" src = "~/images/carpetaDebug.png" alt="Foto de carpeta de archivos guardados" />
+</div>

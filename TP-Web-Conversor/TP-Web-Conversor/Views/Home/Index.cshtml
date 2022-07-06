@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<section class="container seccion align-content-center">
+    <img src = "~/images/converter.png" height="300" width="300" alt="Icono de la app"/>
+    <h1 class="mt-md-3  mt-3 text-titulo"><b>Bienvenido a la página oficial del Conversor Mágico</b></h1>
+
+    <h2>Conversor Mágico es una aplicación de desktop con la cual se puede realizar las siguientes acciones:</h2>
+    <br />
+    <ul>
+        <li><h3>Cambiar el formato del video de X a Y (soportando los formatos comunes como
+            .mp4, .avi, .mpeg, .flv)</h3></li>
+        <li><h3>Extraer el audio de un video en formato .mp3</h3></li>
+        <li><h3>Remover el audio de un video</h3></li>
+        <li><h3>Cambiar la resolución de un video</h3></li>
+        <li><h3>Extraer imagenes del video cada X frames</h3></li>
+    </ul>
+</section>
+<br />
+
+<h3>
+    Conversor Mágico tiene muchas ventajas. 
+    Una de ellas es poder definir y extraer de un video los frames(imagenes por segundo) de alta calidad.
+    En la siguiente te presento un ejemplo donde pude extraer 3 imagenes de un video que dura 1 
+    segundo por solo definiendo la cantidad de frames igual a 3.
+</h3>
+    <br />
+
+<div>
+    <img class = "image-container" src = "./images/imagenesXFrames.png" alt="Foto de screen de pantalla" />
+</div>
+<br />
+<br />
+
+<h4>
+    Para obtener más información, el producto y la guía de instalación crea un usuario <span> <a class="link text-dark" asp-area="" asp-controller="Home" asp-action="Registrarse"><span class = "blue">Registrándote</span></a></span>
+     o si ya cuentas con un usuario <a class="link text-dark blue" asp-area="" asp-controller="Home" asp-action="IniciarSesion">
+         <span class = "blue">Iniciando sesion</span>
+     </a>
+</h4>
